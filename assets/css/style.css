@@ -1493,6 +1493,21 @@ section {
   box-shadow: 0 14px 35px rgba(7, 24, 39, 0.16);
 }
 
+#header .logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  box-shadow: 0 12px 28px rgba(7, 24, 39, 0.18);
+}
+
+#header .logo a {
+  display: inline-flex;
+  align-items: center;
+}
+
 #header .logo img {
   max-height: 58px;
 }
@@ -1526,6 +1541,43 @@ section {
   border: 1px solid rgba(221, 231, 239, 0.8);
   border-radius: 8px;
   box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    position: relative;
+    z-index: 1001;
+  }
+
+  .navbar-mobile {
+    z-index: 1000;
+  }
+
+  .navbar-mobile ul {
+    border-radius: 8px;
+    box-shadow: 0 24px 60px rgba(7, 24, 39, 0.24);
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    color: var(--color-ink);
+  }
+
+  .navbar-mobile a:hover,
+  .navbar-mobile .active,
+  .navbar-mobile li:hover>a {
+    color: var(--color-blue);
+  }
+
+  .navbar-mobile .getstarted,
+  .navbar-mobile .getstarted:focus {
+    justify-content: center;
+    color: var(--color-navy);
+  }
+
+  .navbar-mobile .dropdown ul {
+    border-radius: 8px;
+  }
 }
 
 #hero {
@@ -1929,6 +1981,27 @@ section {
 
 #footer .footer-top .footer-contact p {
   font-family: "Inter", sans-serif;
+}
+
+#footer .footer-contact .logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 22px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+}
+
+#footer .footer-contact .logo a {
+  display: inline-flex;
+  align-items: center;
+}
+
+#footer .footer-contact .logo img {
+  display: block;
+  max-width: 200px;
+  height: auto;
 }
 
 #footer .copyright-wrap {
